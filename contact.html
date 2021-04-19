@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="./js/index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="navbar" class="menu">
+                <img src="./image/logo.png" alt="logo tandartspraktijk Goos" />
+                <h1>Tandartspraktijk Goos</h1>
+                <ul class="nav">
+                       <li><button><a href="index.html">Home</a></button></li>
+                       <li><button><a href="about.html">About</a></button></li>
+                       <li><button><a href="contact.html">Contact</a></button></li>
+                </ul>
+        </div>
+        <div class="content">
+        <div class="slide-container">
+            <div class="slide fade">
+                <img src="./image/team.jpeg" alt="tandartspraktijk team" style="width: 100%;" />
+                <div class="text">Tandartspraktijk Goos</div>
+            </div>
+            <div class="slide fade">
+                <img src="./image/praktijk.jpeg" alt="tandartspraktijk" style="width: 100%;"/>
+                <div class="text">De Praktijk</div>
+            </div>
+            <div class="slide fade">
+                <img src="./image/toothbrush.jpg" alt="tandartspraktijk treatment" style="width: 100%;" />
+                <div class="text">Behandeling</div>
+            </div>
+            <div class="slide fade">
+                <img src="./image/tandartswork.jpeg" alt="tandartspraktijk treatment" style="width: 100%;" />
+                <div class="text">Behandeling</div>
+            </div>
+            <a href="#" class="prev" title="Previous">&#10094</a>
+            <a href="#" class="next" title="Next">&#10095</a>
+            <br>
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </header>
+    <main class="contact-main">
+       <section class="contact-contact">
+            <div class="contact-phone">
+                <p><i class="fas fa-phone"></i></p>
+                <p>020-6331611</p>
+            </div>
+            <div class="spoed">
+                <p><i class="fas fa-ambulance"></i></p>
+                <a href="www.dental365.nl">Direct contact: Dental 365</a>
+            </div>
+            
+            <div class="contact-adress">
+                <p><i class="fas fa-address-card"></i></p>
+                <p>Meteorensingle 13</p>
+                <p>1033 CB Amsterdam</p>
+            </div>
+            <div class="contact-email">
+                <p><i class="fas fa-at"></i></p>
+                <p>tandartspraktijkgoos@gmail.com</p>
+            </div> 
+               <div id="map"></div>        
+        </section>
+
+        <section class="openingstijden">
+            <br>
+            <h3>Openingstijden</h3>
+            <br>
+            <i class="fas fa-user-clock"></i>
+            <br>
+            <p class="day">Maandag</p><p>8:00 tot 16:30</p>
+            <p class="day">Dinsdag</p><p>8:00 tot 16:30</p>
+            <p class="day">Woensdag</p><p>Gesloten</p>
+            <p class="day">Donderdag</p><p>8:00 tot 16:30</p>
+            <p class="day">Vrijdag</p><p>8:00 tot 16:30</p>
+            <p class="day">Zaterdag</p><p>Gesloten</p>
+            <p class="day">Zondag</p><p>Gesloten</p>
+        </section>
+
+    </main>
+            
+
+    <footer>
+        
+        <div class="copyright">
+            <p><i class="far fa-copyright"></i>Website made by Jochum Sloot.</p>
+            <p>2021</p>
+        </div>
+    </footer>
+        </div>
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+</body>
+</html>

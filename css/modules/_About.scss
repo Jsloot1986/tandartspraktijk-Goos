@@ -1,0 +1,42 @@
+.about{
+    section{
+        background-color: $buttonColor;
+        margin: 5px;
+    }
+    .team-text{
+        background-color: $buttonColor;
+        color: white;
+    }
+}
+@media only screen and (min-width: 760px){
+    .about{
+        article{
+            width: 200px;
+            height: 300px;
+            font-size: 12px;
+            li{
+                font-size: 15px;
+            }
+        }
+        .team{
+            section{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1020px) {
+    .about{
+        .team{
+            section{
+                width: 300px;
+                height: 300px;
+                img{
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

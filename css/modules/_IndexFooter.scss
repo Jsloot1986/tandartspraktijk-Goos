@@ -1,0 +1,53 @@
+footer{
+    background-color: green;
+    color: white;
+    .contact{
+        margin-top: 10px;
+        padding-top: 10px;
+        width: 300px;
+        height: 200px;
+        border: 3px solid white;
+        transform: translate(20px, 0px);
+    }
+    .contact-phone, .contact-adress, .contact-email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        font-size: 12px;
+        i{
+            margin-bottom: 10px;
+        }
+    }
+    .openingstijden{
+        width: 300px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-bottom: 5px;
+        border: solid white 3px;
+        transform: translate(20px, 0px);
+        h3{
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        i{
+            margin: 15px;
+        }
+        p{
+            padding: 5px;
+        }
+        .day{
+            text-decoration: underline;
+        }
+    }
+    .copyright{
+        font-size: 10px;
+        margin: 5px;
+        padding: 3px;
+        i{
+            margin-right: 5px;
+        }
+    }
+}
+

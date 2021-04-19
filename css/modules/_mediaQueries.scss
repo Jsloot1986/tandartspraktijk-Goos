@@ -1,0 +1,285 @@
+@media only screen and (min-width: 767px) {
+    body{
+        width: auto;
+        height: auto;
+    }
+    header{
+        width: auto;
+        height: auto;
+        .menu img{
+            width: 200px;
+            height: 150px;
+            transform: translate(50px, 5px);
+        }
+        .menu h1{
+            font-size: 25px;
+            padding: 10px;
+            opacity: 1;
+            display: flex;
+            flex-direction: row;
+            transform: translate(75px, 20px);
+        
+        .slide-container{
+            transform: translate(0px, 0px);
+            .slide .text{
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+    }
+    main{
+        h1{
+            font-size: 30px;
+            padding: 10px;
+        }
+        p{
+            font-size: 20px;
+        }
+        img{
+            margin-top: 10px;
+        }
+        .info-icons{
+            width: auto;
+            height: auto;
+            font-size: 30px;
+            i{
+                padding-top: 5px;
+                font-weight: bold;
+            }
+            p{
+                padding: 5px;
+            }
+        }
+        .reviews{
+            h1{
+                font-size: 30px;
+                padding: 10px;
+            }
+            article{
+                margin-left: 150px;
+                width: 500px;
+                height: auto;
+                text-align: center;
+                padding: 20px;
+
+                #quote, h2, h3{
+                    font-size: 20px;
+                    padding: 5px;
+                }
+                p{
+                    font-size: 20px;
+                    padding: 10px;
+                }
+
+            }
+        }
+        .team-title{
+            h1{
+                font-size: 30px;
+                padding: 10px;
+            }
+        }
+        .row{
+            margin-left: 150px;
+        }
+        .column{
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+        .card{
+            height: 495px;
+        }
+        .card-container{
+            transform: translate(0px, -125px);
+            color: white;
+            h2{
+                font-size: 30px;
+                padding: 5px;
+            }
+            .card-title{
+                font-size: 25px;
+                padding: 5px;
+            }
+            p{
+                font-size: 20px;
+                padding: 5px;
+            }
+        }
+        .guusje img{
+            height: 300px;
+        }
+    }
+    footer{
+        
+        .contact{
+            margin-left: 130px;
+            width: 500px;
+            height: auto;
+        }
+        .contact-phone, .contact-adress, .contact-email{
+            font-size: 25px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            i, p{
+                padding: 10px;
+            }
+        }
+        .contact-email{
+            padding-bottom: 10px;
+            p{
+                padding: 10px;
+            }
+        }
+        .openingstijden{
+            width: 500px;
+            height: auto;
+            transform: translate(150px, 0px);
+            margin-bottom: 5px;
+            h3{
+                font-size: 25px;
+                padding: 10px;
+            }
+            i {
+                font-size: 35px;
+                padding: 10px;
+            }
+            p{
+                font-size: 20px;
+                padding: 10px;
+            }
+        }
+        .copyright{
+            font-size: 15px;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1020px) {
+    header{
+        .menu{
+            img{
+                width: 250px;
+                height: 150px;
+            }
+            h1{
+                font-size: 30px;
+                transform: translate(40px, 50px);
+            }
+            .nav{
+                transform: translate(120px, 20px);
+                button{
+                    width: 200px;
+                    height: 50px;
+                    
+                }
+            }
+
+        }
+        .slide-container{
+            .slide{
+                .text{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    main{
+        .info-text{
+            p{
+                padding: 5px;
+            }
+        }
+        .info img{
+            width: 50%;
+        }
+        .info-icons{
+            width: 50%;
+            margin-left: 380px;
+            margin-top: 20px;
+        }
+
+        .reviews{
+            display: grid;
+            grid-template-columns: 550px 550px;
+            grid-template-rows: auto;
+            grid-template-areas:  
+            'title title'
+            'review1 review2'
+            'review3 review4'
+            ;
+        }
+            .review-title{
+                grid-area: title;
+                transform: translate(200px, 0px);
+            }
+            .review1{
+                grid-area: review1;
+                
+            }
+            .review2{
+                grid-area: review2;
+                
+            }
+            .review3{
+                grid-area: review3;
+                
+            }
+            .review4{
+                grid-area: review4;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: 550px 600px;
+            grid-template-rows: 520px 520px;
+            grid-template-areas: 
+            'duncan duncan'
+            'rina guusje';
+            h2{
+                padding: 10px;
+            }
+        }
+        .duncan{
+            grid-area: duncan;
+            transform: translate(300px, 0px);
+        }
+        .rina{
+            grid-area: rina;
+        }
+        .guusje{
+            grid-area: guusje;
+        }
+    }
+    footer{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 550px 550px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'contact opening'
+        'copyr copyr';
+        .contact{
+            grid-area: contact;
+        }
+        .openingstijden{
+            grid-area: opening;
+        }
+        .copyright{
+            grid-area: copyr;
+            p, i{
+                padding: 5px;
+            }
+        }
+    }
+}

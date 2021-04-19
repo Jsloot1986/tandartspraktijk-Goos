@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+//Colors
+
+$green: #326103;
+$ligth: #FFFF;
+$lightgrey: #DCDCDC;
+$dark: #000000;
+$limegreen: #32CD32;
+$lightgreen: #7FFF00;
+$FloralWhite: #FFFAF0;
+
+$backgroundColorBody: $FloralWhite;
+$buttonColor: $limegreen;
+$buttonHover: $lightgreen;
+
+
+//Font variables
+$fontFamily: 'Noto Sans', sans-serif;
+$thin: 200;
+$normal: 400;
+$bold: 600;
+$heavy: 800;
+
+$headFont: $thin 1.5em/1.5em $fontFamily;
+$mainFont: $thin 1em/1.5em $fontFamily;
+$footerFont: $thin 1em/1em $fontFamily;
+$headerColor: lighten($limegreen, 20);

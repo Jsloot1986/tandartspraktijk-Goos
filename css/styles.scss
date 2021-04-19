@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//Core Partial
+@import "Variables";
+@import "Mixins";
+@import "Base";
+@import "Layout";
+
+// Import modules;
+@import "modules/IndexHeader";
+@import "modules/IndexMain";
+@import "modules/IndexFooter";
+@import "modules/About";
+@import "modules/Contact";
+@import "modules/mediaQueries";

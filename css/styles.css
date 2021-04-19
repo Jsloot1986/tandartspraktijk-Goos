@@ -1,0 +1,716 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFAF0;
+}
+
+header {
+  font: 200 1.5em/1.5em "Noto Sans", sans-serif;
+  color: #84e184;
+}
+
+main {
+  font: 200 1em/1.5em "Noto Sans", sans-serif;
+}
+
+footer {
+  font: 200 1em/1em "Noto Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  width: 350px;
+  height: auto;
+  text-align: center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: auto;
+  height: auto;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  z-index: 1;
+  height: auto;
+  overflow-y: hidden;
+}
+
+header .menu img {
+  width: 150px;
+  height: 100px;
+}
+
+header .menu h1 {
+  font-size: 12px;
+  opacity: 0;
+  display: none;
+}
+
+header .menu .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(-10px, 0px);
+          transform: translate(-10px, 0px);
+}
+
+header .menu .nav li {
+  list-style-type: none;
+  margin: 3px;
+}
+
+header .menu .nav a {
+  text-decoration: none;
+  color: #FFFF;
+  font-weight: bold;
+}
+
+header .menu .nav button {
+  background-color: #32CD32;
+  width: 60px;
+  height: 25px;
+  border: none;
+  border-radius: 20%;
+}
+
+header .menu .nav button:hover {
+  background-color: #7FFF00;
+}
+
+header .slide {
+  display: none;
+}
+
+header .slide-container {
+  width: auto;
+  position: relative;
+  -webkit-transform: translate(10px, 0px);
+          transform: translate(10px, 0px);
+}
+
+header .slide-container .prev, header .slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header .slide-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  -webkit-transform: translate(0px, -50px);
+          transform: translate(0px, -50px);
+}
+
+header .slide-container .prev {
+  -webkit-transform: translate(-180px, -50px);
+          transform: translate(-180px, -50px);
+}
+
+header .slide-container .prev:hover, header .slide-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header .slide-container .slide .text {
+  color: #FFFF;
+  font-size: 11px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 3px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  background-color: #32CD32;
+}
+
+header .slide-container .dots-container {
+  z-index: 0.7;
+  -webkit-transform: translate(0px, -5px);
+          transform: translate(0px, -5px);
+}
+
+header .slide-container .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+header .slide-container .active, header .slide-container .dot:hover {
+  background-color: #7FFF00;
+}
+
+header .slide-container .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  padding-top: 100px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  margin-top: 10px;
+}
+
+main h1 {
+  font-size: 18px;
+}
+
+main p {
+  font-size: 12px;
+  text-align: center;
+}
+
+main .info-icons {
+  background-color: #32CD32;
+  color: #FFFF;
+  margin-top: -5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+main .reviews h1 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+main .reviews article {
+  border: solid 2px green;
+  margin: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+main .reviews article #quote {
+  font-size: 15px;
+}
+
+main .reviews article h2, main .reviews article h3 {
+  font-size: 14px;
+}
+
+main .team-title h1 {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+main .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+main .column {
+  border: 3px solid green;
+  margin: 20px 0px;
+  width: 300px;
+  height: 300px;
+  overflow-y: hidden;
+}
+
+main .card {
+  background-color: #32CD32;
+  color: white;
+  height: 295px;
+}
+
+main .card-container {
+  background-color: #32CD32;
+  -webkit-transform: translate(0px, -80px);
+          transform: translate(0px, -80px);
+}
+
+main .card-container h2 {
+  font-size: 18px;
+}
+
+main .card-container .card-title {
+  font-size: 15px;
+}
+
+main .card-container p {
+  font-size: 11px;
+}
+
+main .guusje img {
+  height: 210px;
+}
+
+footer {
+  background-color: green;
+  color: white;
+}
+
+footer .contact {
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 300px;
+  height: 200px;
+  border: 3px solid white;
+  -webkit-transform: translate(20px, 0px);
+          transform: translate(20px, 0px);
+}
+
+footer .contact-phone, footer .contact-adress, footer .contact-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+footer .contact-phone i, footer .contact-adress i, footer .contact-email i {
+  margin-bottom: 10px;
+}
+
+footer .openingstijden {
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+  border: solid white 3px;
+  -webkit-transform: translate(20px, 0px);
+          transform: translate(20px, 0px);
+}
+
+footer .openingstijden h3 {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+footer .openingstijden i {
+  margin: 15px;
+}
+
+footer .openingstijden p {
+  padding: 5px;
+}
+
+footer .openingstijden .day {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  font-size: 10px;
+  margin: 5px;
+  padding: 3px;
+}
+
+footer .copyright i {
+  margin-right: 5px;
+}
+
+.about section {
+  background-color: #32CD32;
+  margin: 5px;
+}
+
+.about .team-text {
+  background-color: #32CD32;
+  color: white;
+}
+
+@media only screen and (min-width: 767px) {
+  body {
+    width: auto;
+    height: auto;
+  }
+  header {
+    width: auto;
+    height: auto;
+  }
+  header .menu img {
+    width: 200px;
+    height: 150px;
+    -webkit-transform: translate(50px, 5px);
+            transform: translate(50px, 5px);
+  }
+  header .menu h1 {
+    font-size: 25px;
+    padding: 10px;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: translate(75px, 20px);
+            transform: translate(75px, 20px);
+  }
+  header .menu h1 .slide-container {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  header .menu h1 .slide-container .slide .text {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  main h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main p {
+    font-size: 20px;
+  }
+  main img {
+    margin-top: 10px;
+  }
+  main .info-icons {
+    width: auto;
+    height: auto;
+    font-size: 30px;
+  }
+  main .info-icons i {
+    padding-top: 5px;
+    font-weight: bold;
+  }
+  main .info-icons p {
+    padding: 5px;
+  }
+  main .reviews h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main .reviews article {
+    margin-left: 150px;
+    width: 500px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  main .reviews article #quote, main .reviews article h2, main .reviews article h3 {
+    font-size: 20px;
+    padding: 5px;
+  }
+  main .reviews article p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  main .team-title h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main .row {
+    margin-left: 150px;
+  }
+  main .column {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+  }
+  main .card {
+    height: 495px;
+  }
+  main .card-container {
+    -webkit-transform: translate(0px, -125px);
+            transform: translate(0px, -125px);
+    color: white;
+  }
+  main .card-container h2 {
+    font-size: 30px;
+    padding: 5px;
+  }
+  main .card-container .card-title {
+    font-size: 25px;
+    padding: 5px;
+  }
+  main .card-container p {
+    font-size: 20px;
+    padding: 5px;
+  }
+  main .guusje img {
+    height: 300px;
+  }
+  footer .contact {
+    margin-left: 130px;
+    width: 500px;
+    height: auto;
+  }
+  footer .contact-phone, footer .contact-adress, footer .contact-email {
+    font-size: 25px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px;
+  }
+  footer .contact-phone i, footer .contact-phone p, footer .contact-adress i, footer .contact-adress p, footer .contact-email i, footer .contact-email p {
+    padding: 10px;
+  }
+  footer .contact-email {
+    padding-bottom: 10px;
+  }
+  footer .contact-email p {
+    padding: 10px;
+  }
+  footer .openingstijden {
+    width: 500px;
+    height: auto;
+    -webkit-transform: translate(150px, 0px);
+            transform: translate(150px, 0px);
+    margin-bottom: 5px;
+  }
+  footer .openingstijden h3 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  footer .openingstijden i {
+    font-size: 35px;
+    padding: 10px;
+  }
+  footer .openingstijden p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  footer .copyright {
+    font-size: 15px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  header .menu img {
+    width: 250px;
+    height: 150px;
+  }
+  header .menu h1 {
+    font-size: 30px;
+    -webkit-transform: translate(40px, 50px);
+            transform: translate(40px, 50px);
+  }
+  header .menu .nav {
+    -webkit-transform: translate(120px, 20px);
+            transform: translate(120px, 20px);
+  }
+  header .menu .nav button {
+    width: 200px;
+    height: 50px;
+  }
+  header .slide-container .slide .text {
+    font-size: 20px;
+  }
+  main .info-text p {
+    padding: 5px;
+  }
+  main .info img {
+    width: 50%;
+  }
+  main .info-icons {
+    width: 50%;
+    margin-left: 380px;
+    margin-top: 20px;
+  }
+  main .reviews {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 550px 550px;
+        grid-template-columns: 550px 550px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'title title' 'review1 review2' 'review3 review4';
+  }
+  main .review-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+    -webkit-transform: translate(200px, 0px);
+            transform: translate(200px, 0px);
+  }
+  main .review1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: review1;
+  }
+  main .review2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: review2;
+  }
+  main .review3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: review3;
+  }
+  main .review4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: review4;
+  }
+  main .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 550px 600px;
+        grid-template-columns: 550px 600px;
+    -ms-grid-rows: 520px 520px;
+        grid-template-rows: 520px 520px;
+        grid-template-areas: 'duncan duncan' 'rina guusje';
+  }
+  main .row h2 {
+    padding: 10px;
+  }
+  main .duncan {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: duncan;
+    -webkit-transform: translate(300px, 0px);
+            transform: translate(300px, 0px);
+  }
+  main .rina {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: rina;
+  }
+  main .guusje {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: guusje;
+  }
+  footer {
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 550px 550px;
+        grid-template-columns: 550px 550px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'contact opening' 'copyr copyr';
+  }
+  footer .contact {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contact;
+  }
+  footer .openingstijden {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: opening;
+  }
+  footer .copyright {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: copyr;
+  }
+  footer .copyright p, footer .copyright i {
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
