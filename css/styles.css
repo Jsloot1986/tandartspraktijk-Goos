@@ -345,8 +345,36 @@ main .main-about .team .duncan, main .main-about .team .rina, main .main-about .
   .main-about article p {
     font-size: 15px;
   }
-  .main-about .team .team-text {
-    background-color: #32CD32;
+  .main-about .main-about .team {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px 300px;
+        grid-template-columns: 300px 300px;
+    -ms-grid-rows: 100px 400px 400px;
+        grid-template-rows: 100px 400px 400px;
+        grid-template-areas: 'title title' 'duncan duncan' 'rina guusje';
+  }
+  .main-about .main-about .team h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+  }
+  .main-about .main-about .team .dentist {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: duncan;
+  }
+  .main-about .main-about .team .assistant1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: rina;
+  }
+  .main-about .main-about .team .assistant2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: guusje;
   }
 }
 
@@ -412,7 +440,7 @@ main .main-about .team .duncan, main .main-about .team .rina, main .main-about .
     padding: 10px;
   }
   main .duncan {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: duncan;
@@ -420,18 +448,45 @@ main .main-about .team .duncan, main .main-about .team .rina, main .main-about .
             transform: translate(300px, 0px);
   }
   main .rina {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: rina;
   }
   main .guusje {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: guusje;
   }
-  .main-about .team .duncan, .main-about .team .rina, .main-about .team .guusje {
-    width: 300px;
-    height: 300px;
+  .main-about .team {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px 300px;
+        grid-template-columns: 300px 300px;
+    -ms-grid-rows: 100px 400px 400px;
+        grid-template-rows: 100px 400px 400px;
+        grid-template-areas: 'title title' 'duncan duncan' 'rina guusje';
+  }
+  .main-about .team h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+  }
+  .main-about .team .dentist {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: duncan;
+  }
+  .main-about .team .assistant1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: rina;
+  }
+  .main-about .team .assistant2 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: guusje;
   }
   .contact-main h3, .contact-main p {
     padding: 5px;

@@ -176,12 +176,31 @@ main{
                 font-size: 15px;
             }
         }
+        .main-about{
         .team{
-            .team-text{
-                background-color: $buttonColor;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 100px 400px 400px;
+            grid-template-areas: 
+            'title title'
+            'duncan duncan'
+            'rina guusje';
+            h1{
+                grid-area: title;
+            }
+            .dentist{
+                grid-area: duncan;
+            }
+            .assistant1{
+                grid-area: rina;
+            }
+            .assistant2{
+                grid-area: guusje;
             }
         }
-    
+        
+    }
+        
 }
 }
 
@@ -254,12 +273,28 @@ main{
     }
     .main-about{
         .team{
-            .duncan, .rina, .guusje{
-                    width: 300px;
-                    height: 300px;
-                }
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 100px 400px 400px;
+            grid-template-areas: 
+            'title title'
+            'duncan duncan'
+            'rina guusje';
+            h1{
+                grid-area: title;
+            }
+            .dentist{
+                grid-area: duncan;
+            }
+            .assistant1{
+                grid-area: rina;
+            }
+            .assistant2{
+                grid-area: guusje;
             }
         }
+        
+    }
     .contact-main{
         h3, p{
             padding: 5px;
