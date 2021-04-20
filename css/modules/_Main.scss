@@ -1,33 +1,95 @@
-@media only screen and (min-width: 767px) {
-    body{
-        width: auto;
-        height: auto;
+main{
+    margin-top: 10px;
+    h1{
+        font-size: 18px;
     }
-    header{
-        width: auto;
-        height: auto;
-        .menu img{
-            width: 200px;
-            height: 150px;
-            transform: translate(50px, 5px);
-        }
-        .menu h1{
-            font-size: 25px;
-            padding: 10px;
-            opacity: 1;
-            display: flex;
-            flex-direction: row;
-            transform: translate(75px, 20px);
+    p{
+        font-size: 12px;
+        text-align: center;
+    }
+   .info-icons {
+       background-color: $buttonColor;
+       color: $ligth;
+       margin-top: -5px;
+       padding-top: 5px;
+       padding-bottom: 5px;
+   }
+   .reviews {
+       h1 {
+           font-size: 18px;
+           margin-top: 10px;
+       }
+       article {
+           border: solid 2px green;
+           margin: 20px;
+           width: 300px;
+           height: 200px;
+           
+
+           #quote {
+               font-size: 15px;
+           }
+           h2, h3 {
+               font-size: 14px;
+           }
+       }
+   }
+   .team-title{
+       h1 {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+   }
+
+   .row {
+       display: flex;
+       flex-direction: column;
+       margin-left: 20px;
+   }
+   .column{
+       border: 3px solid green;
+       margin: 20px 0px;
+       width: 300px;
+       height: 300px;
+       overflow-y: hidden;
+      
+   }
+   .card{
+       background-color: $limegreen;
+       color: white;
+       height: 295px;
         
-        .slide-container{
-            transform: translate(0px, 0px);
-            .slide .text{
-                font-size: 15px;
-                font-weight: bold;
+   }
+   .card-container{
+       background-color: $buttonColor;
+       transform: translate(0px, -80px);
+       h2{
+           font-size: 18px;
+       }
+       .card-title{
+           font-size: 15px;
+       }
+       p{
+           font-size: 11px;
+       }
+   } 
+   .main-about{
+       article{
+           p{
+               font-size: 11px;
+               padding: 0px;
+           }
+       }
+       .team{
+       .duncan, .rina, .guusje{
+                    width: 100%;
+                }
             }
-        }
-    }
-    }
+   }  
+}
+
+@media only screen and (min-width: 767px) {
+    
     main{
         h1{
             font-size: 30px;
@@ -107,94 +169,23 @@
                 padding: 5px;
             }
         }
-        .guusje img{
-            height: 300px;
-        }
-    }
-    footer{
-        
-        .contact{
-            margin-left: 130px;
-            width: 500px;
-            height: auto;
-        }
-        .contact-phone, .contact-adress, .contact-email{
-            font-size: 25px;
-            padding-bottom: 10px;
-            display: flex;
-            flex-direction: column;
-            margin: 10px;
-            i, p{
-                padding: 10px;
-            }
-        }
-        .contact-email{
-            padding-bottom: 10px;
+}
+.main-about{
+        article{
             p{
-                padding: 10px;
+                font-size: 15px;
             }
         }
-        .openingstijden{
-            width: 500px;
-            height: auto;
-            transform: translate(150px, 0px);
-            margin-bottom: 5px;
-            h3{
-                font-size: 25px;
-                padding: 10px;
-            }
-            i {
-                font-size: 35px;
-                padding: 10px;
-            }
-            p{
-                font-size: 20px;
-                padding: 10px;
+        .team{
+            .team-text{
+                background-color: $buttonColor;
             }
         }
-        .copyright{
-            font-size: 15px;
-            padding: 5px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-    }
     
+}
 }
 
 @media only screen and (min-width: 1020px) {
-    header{
-        .menu{
-            img{
-                width: 250px;
-                height: 150px;
-            }
-            h1{
-                font-size: 30px;
-                transform: translate(40px, 50px);
-            }
-            .nav{
-                transform: translate(120px, 20px);
-                button{
-                    width: 200px;
-                    height: 50px;
-                    
-                }
-            }
-
-        }
-        .slide-container{
-            .slide{
-                .text{
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-
     main{
         .info-text{
             p{
@@ -261,25 +252,17 @@
             grid-area: guusje;
         }
     }
-    footer{
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 550px 550px;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        'contact opening'
-        'copyr copyr';
-        .contact{
-            grid-area: contact;
-        }
-        .openingstijden{
-            grid-area: opening;
-        }
-        .copyright{
-            grid-area: copyr;
-            p, i{
-                padding: 5px;
+    .main-about{
+        .team{
+            .duncan, .rina, .guusje{
+                    width: 300px;
+                    height: 300px;
+                }
             }
+        }
+    .contact-main{
+        h3, p{
+            padding: 5px;
         }
     }
 }

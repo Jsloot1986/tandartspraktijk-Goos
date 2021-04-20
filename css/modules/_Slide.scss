@@ -1,55 +1,4 @@
-header {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: auto;
-    height: auto;
-    .menu {
-        display: flex;
-        flex-direction: row;
-        background-color: white;
-        z-index: 1;
-        height: auto;
-        overflow-y: hidden;
-    }
-    .menu img{
-        width: 150px;
-        height: 100px;
-    }
-    .menu h1{
-        font-size: 12px;
-        opacity: 0;
-        display: none;
-    }
-    .menu .nav{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        transform: translate(-10px, 0px);
-        li{
-            list-style-type: none;
-            margin: 3px;
-        }
-        a{
-            text-decoration: none;
-            color: $ligth;
-            font-weight: bold;
-        }
-        button{
-            background-color: $buttonColor;
-            width: 60px;
-            height: 25px;
-            border: none;
-            border-radius: 20%;
-        }
-        button:hover{
-            background-color: $lightgreen;
-        }
-    }
-
-
-    //slide show
+header{
     .slide {
         display: none;
     }
@@ -134,3 +83,25 @@ header {
   top: 0;
   width: 100%;
     }
+@media only screen and (min-width: 767px) {
+    
+        .slide-container{
+            transform: translate(0px, 0px);
+            .slide .text{
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+    }
+
+@media only screen and (min-width: 1020px) {
+    header{
+        .slide-container{
+            .slide{
+                .text{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

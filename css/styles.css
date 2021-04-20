@@ -37,6 +37,13 @@ body {
   text-align: center;
 }
 
+@media only screen and (min-width: 767px) {
+  body {
+    width: auto;
+    height: auto;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +121,493 @@ header .menu .nav button {
 
 header .menu .nav button:hover {
   background-color: #7FFF00;
+}
+
+@media only screen and (min-width: 767px) {
+  header {
+    width: auto;
+    height: auto;
+  }
+  header .menu img {
+    width: 200px;
+    height: 150px;
+    -webkit-transform: translate(50px, 5px);
+            transform: translate(50px, 5px);
+  }
+  header .menu h1 {
+    font-size: 25px;
+    padding: 10px;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: translate(75px, 20px);
+            transform: translate(75px, 20px);
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  header .menu img {
+    width: 250px;
+    height: 150px;
+  }
+  header .menu h1 {
+    font-size: 30px;
+    -webkit-transform: translate(40px, 50px);
+            transform: translate(40px, 50px);
+  }
+  header .menu .nav {
+    -webkit-transform: translate(120px, 20px);
+            transform: translate(120px, 20px);
+  }
+  header .menu .nav button {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+main {
+  margin-top: 10px;
+}
+
+main h1 {
+  font-size: 18px;
+}
+
+main p {
+  font-size: 12px;
+  text-align: center;
+}
+
+main .info-icons {
+  background-color: #32CD32;
+  color: #FFFF;
+  margin-top: -5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+main .reviews h1 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+main .reviews article {
+  border: solid 2px green;
+  margin: 20px;
+  width: 300px;
+  height: 200px;
+}
+
+main .reviews article #quote {
+  font-size: 15px;
+}
+
+main .reviews article h2, main .reviews article h3 {
+  font-size: 14px;
+}
+
+main .team-title h1 {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+main .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+main .column {
+  border: 3px solid green;
+  margin: 20px 0px;
+  width: 300px;
+  height: 300px;
+  overflow-y: hidden;
+}
+
+main .card {
+  background-color: #32CD32;
+  color: white;
+  height: 295px;
+}
+
+main .card-container {
+  background-color: #32CD32;
+  -webkit-transform: translate(0px, -80px);
+          transform: translate(0px, -80px);
+}
+
+main .card-container h2 {
+  font-size: 18px;
+}
+
+main .card-container .card-title {
+  font-size: 15px;
+}
+
+main .card-container p {
+  font-size: 11px;
+}
+
+main .main-about article p {
+  font-size: 11px;
+  padding: 0px;
+}
+
+main .main-about .team .duncan, main .main-about .team .rina, main .main-about .team .guusje {
+  width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+  main h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main p {
+    font-size: 20px;
+  }
+  main img {
+    margin-top: 10px;
+  }
+  main .info-icons {
+    width: auto;
+    height: auto;
+    font-size: 30px;
+  }
+  main .info-icons i {
+    padding-top: 5px;
+    font-weight: bold;
+  }
+  main .info-icons p {
+    padding: 5px;
+  }
+  main .reviews h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main .reviews article {
+    margin-left: 150px;
+    width: 500px;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  main .reviews article #quote, main .reviews article h2, main .reviews article h3 {
+    font-size: 20px;
+    padding: 5px;
+  }
+  main .reviews article p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  main .team-title h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main .row {
+    margin-left: 150px;
+  }
+  main .column {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+  }
+  main .card {
+    height: 495px;
+  }
+  main .card-container {
+    -webkit-transform: translate(0px, -125px);
+            transform: translate(0px, -125px);
+    color: white;
+  }
+  main .card-container h2 {
+    font-size: 30px;
+    padding: 5px;
+  }
+  main .card-container .card-title {
+    font-size: 25px;
+    padding: 5px;
+  }
+  main .card-container p {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .main-about article p {
+    font-size: 15px;
+  }
+  .main-about .team .team-text {
+    background-color: #32CD32;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  main .info-text p {
+    padding: 5px;
+  }
+  main .info img {
+    width: 50%;
+  }
+  main .info-icons {
+    width: 50%;
+    margin-left: 380px;
+    margin-top: 20px;
+  }
+  main .reviews {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 550px 550px;
+        grid-template-columns: 550px 550px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'title title' 'review1 review2' 'review3 review4';
+  }
+  main .review-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: title;
+    -webkit-transform: translate(200px, 0px);
+            transform: translate(200px, 0px);
+  }
+  main .review1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: review1;
+  }
+  main .review2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: review2;
+  }
+  main .review3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: review3;
+  }
+  main .review4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: review4;
+  }
+  main .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 550px 600px;
+        grid-template-columns: 550px 600px;
+    -ms-grid-rows: 520px 520px;
+        grid-template-rows: 520px 520px;
+        grid-template-areas: 'duncan duncan' 'rina guusje';
+  }
+  main .row h2 {
+    padding: 10px;
+  }
+  main .duncan {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: duncan;
+    -webkit-transform: translate(300px, 0px);
+            transform: translate(300px, 0px);
+  }
+  main .rina {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: rina;
+  }
+  main .guusje {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: guusje;
+  }
+  .main-about .team .duncan, .main-about .team .rina, .main-about .team .guusje {
+    width: 300px;
+    height: 300px;
+  }
+  .contact-main h3, .contact-main p {
+    padding: 5px;
+  }
+}
+
+footer {
+  background-color: green;
+  color: white;
+}
+
+footer .contact {
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 300px;
+  height: 200px;
+  border: 3px solid white;
+  -webkit-transform: translate(20px, 0px);
+          transform: translate(20px, 0px);
+}
+
+footer .contact-phone, footer .contact-adress, footer .contact-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+footer .contact-phone i, footer .contact-adress i, footer .contact-email i {
+  margin-bottom: 10px;
+}
+
+footer .openingstijden {
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 5px;
+  border: solid white 3px;
+  -webkit-transform: translate(20px, 0px);
+          transform: translate(20px, 0px);
+}
+
+footer .openingstijden h3 {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+footer .openingstijden i {
+  margin: 15px;
+}
+
+footer .openingstijden p {
+  padding: 5px;
+}
+
+footer .openingstijden .day {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  font-size: 10px;
+  margin: 5px;
+  padding: 3px;
+}
+
+footer .copyright i {
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  footer .contact {
+    height: auto;
+    width: 500px;
+    -webkit-transform: translate(150px, 0px);
+            transform: translate(150px, 0px);
+    margin-bottom: 5px;
+  }
+  footer .contact-phone, footer .contact-adress, footer .contact-email {
+    font-size: 25px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px;
+  }
+  footer .contact-phone i, footer .contact-phone p, footer .contact-adress i, footer .contact-adress p, footer .contact-email i, footer .contact-email p {
+    padding: 10px;
+  }
+  footer .contact-email {
+    padding-bottom: 10px;
+  }
+  footer .contact-email p {
+    padding: 10px;
+  }
+  footer .openingstijden {
+    width: 500px;
+    height: auto;
+    -webkit-transform: translate(150px, 0px);
+            transform: translate(150px, 0px);
+    margin-bottom: 5px;
+  }
+  footer .openingstijden h3 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  footer .openingstijden i {
+    font-size: 35px;
+    padding: 10px;
+  }
+  footer .openingstijden p {
+    font-size: 20px;
+    padding: 10px;
+  }
+  footer .copyright {
+    font-size: 15px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  footer {
+    margin-top: 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 550px 550px;
+        grid-template-columns: 550px 550px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'contact opening' 'copyr copyr';
+  }
+  footer .contact {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contact;
+  }
+  footer .openingstijden {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: opening;
+  }
+  footer .copyright {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: copyr;
+  }
+  footer .copyright p, footer .copyright i {
+    padding: 5px;
+  }
 }
 
 header .slide {
@@ -231,486 +725,20 @@ header .slide-container .fade {
   width: 100%;
 }
 
-main {
-  margin-top: 10px;
-}
-
-main h1 {
-  font-size: 18px;
-}
-
-main p {
-  font-size: 12px;
-  text-align: center;
-}
-
-main .info-icons {
-  background-color: #32CD32;
-  color: #FFFF;
-  margin-top: -5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-main .reviews h1 {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-main .reviews article {
-  border: solid 2px green;
-  margin: 20px;
-  width: 300px;
-  height: 200px;
-}
-
-main .reviews article #quote {
-  font-size: 15px;
-}
-
-main .reviews article h2, main .reviews article h3 {
-  font-size: 14px;
-}
-
-main .team-title h1 {
-  font-size: 15px;
-  margin-top: 5px;
-}
-
-main .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 20px;
-}
-
-main .column {
-  border: 3px solid green;
-  margin: 20px 0px;
-  width: 300px;
-  height: 300px;
-  overflow-y: hidden;
-}
-
-main .card {
-  background-color: #32CD32;
-  color: white;
-  height: 295px;
-}
-
-main .card-container {
-  background-color: #32CD32;
-  -webkit-transform: translate(0px, -80px);
-          transform: translate(0px, -80px);
-}
-
-main .card-container h2 {
-  font-size: 18px;
-}
-
-main .card-container .card-title {
-  font-size: 15px;
-}
-
-main .card-container p {
-  font-size: 11px;
-}
-
-main .guusje img {
-  height: 210px;
-}
-
-footer {
-  background-color: green;
-  color: white;
-}
-
-footer .contact {
-  margin-top: 10px;
-  padding-top: 10px;
-  width: 300px;
-  height: 200px;
-  border: 3px solid white;
-  -webkit-transform: translate(20px, 0px);
-          transform: translate(20px, 0px);
-}
-
-footer .contact-phone, footer .contact-adress, footer .contact-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 10px;
-  font-size: 12px;
-}
-
-footer .contact-phone i, footer .contact-adress i, footer .contact-email i {
-  margin-bottom: 10px;
-}
-
-footer .openingstijden {
-  width: 300px;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-bottom: 5px;
-  border: solid white 3px;
-  -webkit-transform: translate(20px, 0px);
-          transform: translate(20px, 0px);
-}
-
-footer .openingstijden h3 {
-  font-size: 18px;
-  padding-bottom: 5px;
-}
-
-footer .openingstijden i {
-  margin: 15px;
-}
-
-footer .openingstijden p {
-  padding: 5px;
-}
-
-footer .openingstijden .day {
-  text-decoration: underline;
-}
-
-footer .copyright {
-  font-size: 10px;
-  margin: 5px;
-  padding: 3px;
-}
-
-footer .copyright i {
-  margin-right: 5px;
-}
-
-.about section {
-  background-color: #32CD32;
-  margin: 5px;
-}
-
-.about .team-text {
-  background-color: #32CD32;
-  color: white;
-}
-
 @media only screen and (min-width: 767px) {
-  body {
-    width: auto;
-    height: auto;
-  }
-  header {
-    width: auto;
-    height: auto;
-  }
-  header .menu img {
-    width: 200px;
-    height: 150px;
-    -webkit-transform: translate(50px, 5px);
-            transform: translate(50px, 5px);
-  }
-  header .menu h1 {
-    font-size: 25px;
-    padding: 10px;
-    opacity: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-transform: translate(75px, 20px);
-            transform: translate(75px, 20px);
-  }
-  header .menu h1 .slide-container {
+  .slide-container {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
   }
-  header .menu h1 .slide-container .slide .text {
+  .slide-container .slide .text {
     font-size: 15px;
     font-weight: bold;
-  }
-  main h1 {
-    font-size: 30px;
-    padding: 10px;
-  }
-  main p {
-    font-size: 20px;
-  }
-  main img {
-    margin-top: 10px;
-  }
-  main .info-icons {
-    width: auto;
-    height: auto;
-    font-size: 30px;
-  }
-  main .info-icons i {
-    padding-top: 5px;
-    font-weight: bold;
-  }
-  main .info-icons p {
-    padding: 5px;
-  }
-  main .reviews h1 {
-    font-size: 30px;
-    padding: 10px;
-  }
-  main .reviews article {
-    margin-left: 150px;
-    width: 500px;
-    height: auto;
-    text-align: center;
-    padding: 20px;
-  }
-  main .reviews article #quote, main .reviews article h2, main .reviews article h3 {
-    font-size: 20px;
-    padding: 5px;
-  }
-  main .reviews article p {
-    font-size: 20px;
-    padding: 10px;
-  }
-  main .team-title h1 {
-    font-size: 30px;
-    padding: 10px;
-  }
-  main .row {
-    margin-left: 150px;
-  }
-  main .column {
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-  }
-  main .card {
-    height: 495px;
-  }
-  main .card-container {
-    -webkit-transform: translate(0px, -125px);
-            transform: translate(0px, -125px);
-    color: white;
-  }
-  main .card-container h2 {
-    font-size: 30px;
-    padding: 5px;
-  }
-  main .card-container .card-title {
-    font-size: 25px;
-    padding: 5px;
-  }
-  main .card-container p {
-    font-size: 20px;
-    padding: 5px;
-  }
-  main .guusje img {
-    height: 300px;
-  }
-  footer .contact {
-    margin-left: 130px;
-    width: 500px;
-    height: auto;
-  }
-  footer .contact-phone, footer .contact-adress, footer .contact-email {
-    font-size: 25px;
-    padding-bottom: 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 10px;
-  }
-  footer .contact-phone i, footer .contact-phone p, footer .contact-adress i, footer .contact-adress p, footer .contact-email i, footer .contact-email p {
-    padding: 10px;
-  }
-  footer .contact-email {
-    padding-bottom: 10px;
-  }
-  footer .contact-email p {
-    padding: 10px;
-  }
-  footer .openingstijden {
-    width: 500px;
-    height: auto;
-    -webkit-transform: translate(150px, 0px);
-            transform: translate(150px, 0px);
-    margin-bottom: 5px;
-  }
-  footer .openingstijden h3 {
-    font-size: 25px;
-    padding: 10px;
-  }
-  footer .openingstijden i {
-    font-size: 35px;
-    padding: 10px;
-  }
-  footer .openingstijden p {
-    font-size: 20px;
-    padding: 10px;
-  }
-  footer .copyright {
-    font-size: 15px;
-    padding: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: hidden;
   }
 }
 
 @media only screen and (min-width: 1020px) {
-  header .menu img {
-    width: 250px;
-    height: 150px;
-  }
-  header .menu h1 {
-    font-size: 30px;
-    -webkit-transform: translate(40px, 50px);
-            transform: translate(40px, 50px);
-  }
-  header .menu .nav {
-    -webkit-transform: translate(120px, 20px);
-            transform: translate(120px, 20px);
-  }
-  header .menu .nav button {
-    width: 200px;
-    height: 50px;
-  }
   header .slide-container .slide .text {
     font-size: 20px;
-  }
-  main .info-text p {
-    padding: 5px;
-  }
-  main .info img {
-    width: 50%;
-  }
-  main .info-icons {
-    width: 50%;
-    margin-left: 380px;
-    margin-top: 20px;
-  }
-  main .reviews {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 550px 550px;
-        grid-template-columns: 550px 550px;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: 'title title' 'review1 review2' 'review3 review4';
-  }
-  main .review-title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: title;
-    -webkit-transform: translate(200px, 0px);
-            transform: translate(200px, 0px);
-  }
-  main .review1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: review1;
-  }
-  main .review2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: review2;
-  }
-  main .review3 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: review3;
-  }
-  main .review4 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: review4;
-  }
-  main .row {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 550px 600px;
-        grid-template-columns: 550px 600px;
-    -ms-grid-rows: 520px 520px;
-        grid-template-rows: 520px 520px;
-        grid-template-areas: 'duncan duncan' 'rina guusje';
-  }
-  main .row h2 {
-    padding: 10px;
-  }
-  main .duncan {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: duncan;
-    -webkit-transform: translate(300px, 0px);
-            transform: translate(300px, 0px);
-  }
-  main .rina {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: rina;
-  }
-  main .guusje {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: guusje;
-  }
-  footer {
-    margin-top: 20px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 550px 550px;
-        grid-template-columns: 550px 550px;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-        grid-template-areas: 'contact opening' 'copyr copyr';
-  }
-  footer .contact {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: contact;
-  }
-  footer .openingstijden {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: opening;
-  }
-  footer .copyright {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: copyr;
-  }
-  footer .copyright p, footer .copyright i {
-    padding: 5px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
